@@ -35,6 +35,7 @@ export function DashboardNavbar() {
     localStorage.removeItem("token");
     logout({ returnTo: window.location.origin });
   };
+
   return (
     <Navbar
       color={fixedNavbar ? "white" : "transparent"}

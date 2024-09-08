@@ -44,7 +44,6 @@ export function TaskUpdate({
       return false;
     }
 
-    console.log(descriptionEdit);
     if (titleEdit == "") {
       setTitleError("Title cannot be empty");
       return false;
@@ -67,7 +66,7 @@ export function TaskUpdate({
       priority: priorityEdit.toUpperCase(),
       description: descriptionEdit,
       title: titleEdit,
-      userId: "32cedb0a-eb87-4110-9182-240ddc0d3f67",
+      userId: "",
       status: status.toUpperCase(),
       id: id,
     };

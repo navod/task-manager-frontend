@@ -49,7 +49,7 @@ export function TaskAdd({ open, handleOpen, getAll }) {
       priority: priority.toUpperCase(),
       description: descripton.trim(),
       title: title.trim(),
-      userId: "32cedb0a-eb87-4110-9182-240ddc0d3f67",
+      userId: "",
       status: "TODO",
     };
     if (validateFields() == false) {
