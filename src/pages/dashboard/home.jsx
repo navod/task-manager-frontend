@@ -1,6 +1,6 @@
 import React from "react";
 import { TaskCard } from "@/widgets/cards";
-import { Button, Typography } from "@material-tailwind/react";
+import { Button, Spinner, Typography } from "@material-tailwind/react";
 import TaskAdd from "@/widgets/cards/task-add";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTasks, setTaskStatus } from "@/store/slices/task";
@@ -27,7 +27,9 @@ export function Home() {
   return (
     <div className="mt-12">
       {loading && !tasks ? (
-        <h1>loading...</h1>
+        <div className="flex justify-center h-screen items-center">
+          <Spinner className="h-12 w-12" />
+        </div>
       ) : (
         <>
           <div className="flex justify-between items-center mb-10">

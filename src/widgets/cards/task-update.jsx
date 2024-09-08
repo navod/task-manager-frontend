@@ -38,17 +38,19 @@ export function TaskUpdate({
   const [descError, setDescError] = React.useState("");
 
   const validateFields = () => {
-    if (descError == "" && titleError == "") {
+    if (titleEdit == "" && descriptionEdit == "") {
       setTitleError("Title cannot be empty");
       setDescError("Description cannot be empty");
       return false;
     }
-    if (title == "") {
+
+    console.log(descriptionEdit);
+    if (titleEdit == "") {
       setTitleError("Title cannot be empty");
       return false;
     }
 
-    if (descError == "") {
+    if (descriptionEdit == "") {
       setDescError("Description cannot be empty");
       return false;
     }
@@ -91,6 +93,11 @@ export function TaskUpdate({
   const resetFields = () => {
     setPriority(priority);
     setTitle(title);
+    setDescription(description);
+    setDueDate(dueDate);
+    setStatus(status);
+    setDescError("");
+    setTitleError("");
   };
   return (
     <Dialog size="xs" open={open} className="p-4">

@@ -17,10 +17,9 @@ export function Sidenav({ brandImg, brandName, routes }) {
     transparent: "bg-transparent",
   };
 
-  // const [status, setStatus] = React.useState("All");
 
   const { taskStatus } = useSelector((state) => state.task);
-  console.log(taskStatus);
+
   const dispatchRedux = useDispatch();
   const sidenavType = "dark";
 

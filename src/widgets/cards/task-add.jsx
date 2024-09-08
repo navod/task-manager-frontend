@@ -28,7 +28,7 @@ export function TaskAdd({ open, handleOpen, getAll }) {
   const [descError, setDescError] = React.useState("");
 
   const validateFields = () => {
-    if (descError == "" && titleError == "") {
+    if (title == "" && descripton == "") {
       setTitleError("Title cannot be empty");
       setDescError("Description cannot be empty");
       return false;
@@ -38,7 +38,7 @@ export function TaskAdd({ open, handleOpen, getAll }) {
       return false;
     }
 
-    if (descError == "") {
+    if (descripton == "") {
       setDescError("Description cannot be empty");
       return false;
     }
