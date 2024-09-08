@@ -1,8 +1,26 @@
-# React + Vite
+# Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a frontend web application built using React with Vite, Tailwind CSS, and `@material-tailwind/react`. It features a responsive design and is integrated with OAuth2 for authentication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Dependencies
+
+- **React** - A JavaScript library for building user interfaces.
+- **Vite** - A fast build tool for modern web development.
+- **Tailwind CSS** - A utility-first CSS framework.
+- **@material-tailwind/react** - Tailwind CSS components from Material Tailwind.
+- **OAuth2** - For authentication and authorization.
+
+## Installation
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/navod/task-manager-frontend.git
+cd task-manager-frontend
